@@ -9,16 +9,16 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      // orderId: {
-      //   allowNull: false,
-      //   type: Sequelize.INTEGER,
-      //   references: {
-      //     model: 'Orders',
-      //     key: 'id'
-      //   },
-      //   onUpdate: 'CASCADE',
-      //   onDelete: 'RESTRICT'
-      // },
+      orderId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Orders',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'RESTRICT'
+      },
       laundryTypeId: {
         allowNull: false,
         type: Sequelize.INTEGER,

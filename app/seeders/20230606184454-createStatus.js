@@ -5,10 +5,10 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     const Status_data = [
     {
-      status: "active",
+      status: "pending",
     },
     {
-      status: "waiting",
+      status: "active",
     },
     {
       status: "done",

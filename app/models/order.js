@@ -43,6 +43,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     orderStatusId: {
       type: DataTypes.INTEGER,
+      defaultValue: 1,
       allowNull: false,
       references: {
         model: 'orderStatus',
